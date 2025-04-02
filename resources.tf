@@ -17,7 +17,7 @@ data "aws_availability_zones" "available" {}
 ##################################################################################
 locals {
   common_tags = {
-    environment = var.environment 
+    environment = var.environment
   }
 }
 
@@ -62,5 +62,5 @@ resource "aws_security_group" "ingress" {
   tags                   = local.common_tags
   tags_all               = {}
   vpc_id                 = module.main.vpc_id
-  depends_on = [ module.main ]
+  depends_on             = [module.main]
 }
