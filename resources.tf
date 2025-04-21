@@ -20,6 +20,7 @@ locals {
     environment  = var.environment
     Billing_Code = var.billing_code
     Workspace    = terraform.workspace
+    company_coce = "SOLUTIONS IT NORTHWEST"
   }
 }
 
